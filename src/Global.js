@@ -75,10 +75,17 @@ const GlobalStyles = createGlobalStyle`
   }
 
   section {
-    width: 80vw;
-    height: 100vh;
+    width: 90vw;
     margin-inline: auto;
-  }
+
+    @media (min-width: ${({ theme }) => theme.lg}) {
+      width: 60vw;
+    }
+    
+    @media (min-width: ${({ theme }) => theme.lg}) {
+      width: 70vw;
+    }
+  } 
 `;
 
 export default GlobalStyles;
