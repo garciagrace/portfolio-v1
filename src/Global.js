@@ -42,6 +42,10 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
+    
+    &, body {
+      overflow-x: hidden;
+    }
   }
 
   body {
@@ -49,6 +53,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.slate};
     font-family: ${({ theme }) => theme.ffPrimary};
     font-size: clamp(.875rem, 1vw, 1.125rem);
+    
   }
 
   /* width */

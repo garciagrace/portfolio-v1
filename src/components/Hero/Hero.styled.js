@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const HeroSection = styled.section`
+  height: 100vh;
   padding: 0 clamp(0, 7vw, 5rem);
   display: flex;
   flex-direction: column;

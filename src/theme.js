@@ -16,4 +16,5 @@ export const theme = {
 
   // Screen Size
   md: '600px',
+  lg: '900px',
 };
