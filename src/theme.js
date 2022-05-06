@@ -13,4 +13,7 @@ export const theme = {
   // Font Style
   ffPrimary: 'Roboto Mono, Space Mono, monospace',
   ffHeading: 'Montserrat, Poppins, sans-serif',
+
+  // Screen Size
+  md: '600px',
 };

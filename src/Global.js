@@ -46,7 +46,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: ${({ theme }) => theme.bgPrimary};
-    color: ${({ theme }) => theme.lightSlate};
+    color: ${({ theme }) => theme.slate};
     font-family: ${({ theme }) => theme.ffPrimary};
     font-size: clamp(.875rem, 1vw, 1.125rem);
   }
