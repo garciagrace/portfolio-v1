@@ -1,30 +1,37 @@
 import styled from 'styled-components';
 
 export const AboutSection = styled.section`
-  height: 100vh;
+  height: 40rem;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 5rem;
 
   @media (min-width: ${({ theme }) => theme.lg}) {
+    width: 60vw;
     flex-direction: row;
+    flex: 1;
+    align-items: flex-start;
+  }
+
+  @media (min-width: ${({ theme }) => theme.xl}) {
+    width: 50vw;
   }
 `;
 
 export const ImageHolder = styled.div`
   display: flex;
   justify-content: center;
+  max-width: 12rem;
 
   img {
-    max-width: 14rem;
     border-radius: 3px;
     box-shadow: 18px 18px 0 -1px ${({ theme }) => theme.bgPrimary},
       18px 18px ${({ theme }) => theme.yellowCream};
 
     @media (min-width: ${({ theme }) => theme.lg}) {
-      max-width: 18rem;
+      max-width: 17rem;
     }
   }
 `;
@@ -34,7 +41,7 @@ export const AboutInfo = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  h2 {
+  h4 {
     margin: 0.75rem 0;
     text-transform: uppercase;
     font-weight: 800;
@@ -42,14 +49,16 @@ export const AboutInfo = styled.div`
     text-align: center;
   }
 
+  p:not(p:first-child) {
+    margin: 8px 0;
+  }
+
   p:first-child {
     display: none;
   }
 
   @media (min-width: ${({ theme }) => theme.lg}) {
-    width: 75%;
-
-    h2 {
+    h4 {
       text-align: left;
     }
 
@@ -57,4 +66,9 @@ export const AboutInfo = styled.div`
       display: block;
     }
   }
+`;
+
+export const Stack = styled.div`
+  display: block;
+  margin-top: 1.5rem;
 `;

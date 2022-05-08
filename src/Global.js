@@ -24,7 +24,8 @@ const GlobalStyles = createGlobalStyle`
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     font-family: ${({ theme }) => theme.ffHeading};
     font-weight: 700;
   }
@@ -34,10 +35,15 @@ const GlobalStyles = createGlobalStyle`
   }
   
   h2 {
-    font-size: clamp(1.75rem, 7vw, 4.5rem);
+    font-size: clamp(1.75rem, 5vw, 4.5rem);
   }
+
   h3 {
     font-size: clamp(1.375rem, 5vw, 3.5rem);
+  }
+
+  h4 {
+    font-size: clamp(1.25rem, 3vw, 2rem);
   }
 
   html {
@@ -52,7 +58,7 @@ const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.bgPrimary};
     color: ${({ theme }) => theme.slate};
     font-family: ${({ theme }) => theme.ffPrimary};
-    font-size: clamp(.875rem, 1vw, 1.125rem);
+    font-size: clamp(.875rem, 1vw, 1rem);
     
   }
 
@@ -77,13 +83,14 @@ const GlobalStyles = createGlobalStyle`
   section {
     width: 90vw;
     margin-inline: auto;
+    padding: 2rem 0;
 
-    @media (min-width: ${({ theme }) => theme.lg}) {
-      width: 60vw;
+    @media (min-width: ${({ theme }) => theme.md}) {
+      width: 80vw;
     }
     
     @media (min-width: ${({ theme }) => theme.lg}) {
-      width: 70vw;
+      width: 60vw;
     }
   } 
 `;

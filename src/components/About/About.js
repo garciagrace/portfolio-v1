@@ -1,56 +1,31 @@
 import React from 'react';
-import { AboutInfo, AboutSection, ImageHolder } from './About.styled';
-// import {
-//   FaHtml5,
-//   FaCss3Alt,
-//   FaSass,
-//   FaReact,
-//   FaNodeJs,
-//   FaGitAlt,
-// } from 'react-icons/fa';
-// import {
-//   SiJavascript,
-//   SiRedux,
-//   SiExpress,
-//   SiMongodb,
-//   SiVisualstudio,
-//   SiPostman,
-//   SiStyledcomponents,
-// } from 'react-icons/si';
+import { AboutInfo, AboutSection, ImageHolder, Stack } from './About.styled';
 
 import grace from '../../assets/gracegarcia.jpg';
+import TechStack from '../TechStack/TechStack';
 
 const About = () => {
   return (
     <AboutSection id="about">
       <AboutInfo>
         <p>Let me introduce myself.</p>
-        <h2>About Me</h2>
+        <h4>About Me</h4>
+
+        <p>I graduated from college with a degree in Computer Science. </p>
         <p>
-          I am passionate on enhancing my skills as a developer and to challenge
-          myself to try new things.
+          As someone who likes to create, I love the idea of being able to write
+          code and see something tangible being built.
         </p>
 
-        {/* <Stack>
+        <p>
+          My main focus these days is improving my soft and technical skills,
+          explore new challenges, and grow professionally.
+        </p>
+        <Stack>
           <p>Tools and Technologies I Use</p>
 
-          <StackWrapper>
-            <FaHtml5 />
-            <FaCss3Alt />
-            
-            <SiJavascript />
-            <FaSass />
-            <FaReact />
-            <FaNodeJs />
-            <FaGitAlt />
-            <SiRedux />
-            <SiMongodb />
-            <SiExpress />
-            <SiVisualstudio />
-            <SiPostman />
-            <SiStyledcomponents />
-          </StackWrapper>
-        </Stack> */}
+          <TechStack />
+        </Stack>
       </AboutInfo>
       <ImageHolder>
         <img src={grace} alt="Grace Garcia" />
