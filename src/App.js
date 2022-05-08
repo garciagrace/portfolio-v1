@@ -2,7 +2,7 @@ import { ThemeProvider } from 'styled-components';
 
 import { theme } from './theme';
 import GlobalStyles from './Global';
-import { About, Hero, NavBar } from './components';
+import { About, Email, Hero, NavBar, Social } from './components';
 
 const App = () => {
   return (
@@ -10,6 +10,8 @@ const App = () => {
       <GlobalStyles />
 
       <NavBar />
+      <Social />
+      <Email />
       <Hero />
       <About />
     </ThemeProvider>

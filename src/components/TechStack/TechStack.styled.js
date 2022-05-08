@@ -29,7 +29,6 @@ export const Icon = styled.div`
 
   &:hover {
     color: ${({ theme }) => theme.yellowCream};
-    font-size: 2.75rem;
 
     p {
       display: flex;
