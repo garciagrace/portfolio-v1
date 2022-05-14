@@ -11,7 +11,9 @@ const NavBar = () => {
 
   return (
     <Nav>
-      <img src={logo} alt="Grace Garcia" />
+      <a href="/#">
+        <img src={logo} alt="Grace Garcia" />
+      </a>
 
       <MenuBtn className={active && 'active'} onClick={toggleHandler}>
         <span></span>
@@ -20,7 +22,6 @@ const NavBar = () => {
       </MenuBtn>
 
       <NavList>
-        <a href="/#">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>

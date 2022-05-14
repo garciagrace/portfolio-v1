@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import quote from '../../assets/quote.svg';
 
 export const AboutSection = styled.section`
   height: 40rem;
@@ -47,6 +48,17 @@ export const AboutInfo = styled.div`
     font-weight: 800;
     color: ${({ theme }) => theme.yellowCream};
     text-align: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: url(${quote});
+      left: 0;
+      bottom: -6rem;
+      display: block;
+      color: #fff;
+      opacity: 0.1;
+    }
   }
 
   p:not(p:first-child) {

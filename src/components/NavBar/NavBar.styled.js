@@ -9,6 +9,10 @@ export const Nav = styled.nav`
   position: fixed;
   top: 0;
   background: ${({ theme }) => theme.bgPrimaryTrans};
+
+  img {
+    max-width: 4rem;
+  }
 `;
 
 export const MenuBtn = styled.div`
