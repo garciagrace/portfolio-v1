@@ -44,6 +44,12 @@ const GlobalStyles = createGlobalStyle`
 
   h4 {
     font-size: clamp(1.25rem, 3vw, 2rem);
+    color: ${({ theme }) => theme.yellowCream};
+    text-transform: uppercase;
+  }
+ 
+  h5 {
+    font-size: clamp(1.125rem, 3vw, 1.75rem);
   }
 
   html {
