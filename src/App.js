@@ -6,6 +6,7 @@ import {
   About,
   Contact,
   Email,
+  Footer,
   Hero,
   NavBar,
   Projects,
@@ -24,6 +25,7 @@ const App = () => {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </ThemeProvider>
   );
 };

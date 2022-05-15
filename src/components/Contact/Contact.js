@@ -3,7 +3,7 @@ import { ContactSection, SendEmail } from './Contact.styled';
 
 const Contact = () => {
   return (
-    <ContactSection>
+    <ContactSection id="contact">
       <p>What’s Next? Get In Touch</p>
       <h4>Contact Me</h4>
       <p>
