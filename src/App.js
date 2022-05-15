@@ -2,7 +2,15 @@ import { ThemeProvider } from 'styled-components';
 
 import { theme } from './theme';
 import GlobalStyles from './Global';
-import { About, Email, Hero, NavBar, Projects, Social } from './components';
+import {
+  About,
+  Contact,
+  Email,
+  Hero,
+  NavBar,
+  Projects,
+  Social,
+} from './components';
 
 const App = () => {
   return (
@@ -15,6 +23,7 @@ const App = () => {
       <Hero />
       <About />
       <Projects />
+      <Contact />
     </ThemeProvider>
   );
 };
