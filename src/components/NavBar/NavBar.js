@@ -3,7 +3,7 @@ import { MenuBtn, Nav, NavList } from './NavBar.styled';
 import logo from '../../assets/logo.svg';
 
 const NavBar = () => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
 
   const toggleHandler = () => {
     setActive(!active);
@@ -21,10 +21,16 @@ const NavBar = () => {
         <span></span>
       </MenuBtn>
 
-      <NavList>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <NavList className={active && 'active'}>
+        <a href="#about" onClick={toggleHandler}>
+          About
+        </a>
+        <a href="#projects" onClick={toggleHandler}>
+          Projects
+        </a>
+        <a href="#contact" onClick={toggleHandler}>
+          Contact
+        </a>
       </NavList>
     </Nav>
   );

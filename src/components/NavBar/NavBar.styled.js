@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 4.5rem;
   padding: 8px clamp(0.5rem, 7vw, 5rem);
@@ -13,11 +14,17 @@ export const Nav = styled.nav`
   img {
     max-width: 4rem;
   }
+
+  @media (min-width: ${({ theme }) => theme.md}) {
+    flex-direction: row;
+  }
 `;
 
 export const MenuBtn = styled.div`
   display: flex;
-  position: relative;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
   width: 70px;
   height: 70px;
   justify-content: center;
@@ -71,7 +78,14 @@ export const NavList = styled.div`
   display: none;
   align-items: center;
   gap: 2rem;
+  background: ${({ theme }) => theme.bgPrimaryTrans};
   font-family: ${({ theme }) => theme.ffRobotoMono};
+  padding: 1rem 0;
+
+  &.active {
+    display: flex;
+    flex-direction: column;
+  }
 
   & > a {
     font-size: 1.125rem;
