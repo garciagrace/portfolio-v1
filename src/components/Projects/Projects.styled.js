@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 export const ProjectsSection = styled.section`
-  display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 3rem 2rem;
 
   h4 {
     text-align: center;
@@ -15,8 +13,6 @@ export const ProjectsSection = styled.section`
   }
 
   @media (min-width: ${({ theme }) => theme.lg}) {
-    width: 60vw;
-
     h4 {
       text-align: left;
     }

@@ -3,7 +3,7 @@ import { MenuBtn, Nav, NavList } from './NavBar.styled';
 import logo from '../../assets/logo.svg';
 
 const NavBar = () => {
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
 
   const toggleHandler = () => {
     setActive(!active);

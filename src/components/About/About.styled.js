@@ -2,18 +2,17 @@ import styled from 'styled-components';
 import quote from '../../assets/quote.svg';
 
 export const AboutSection = styled.section`
-  height: 40rem;
-  display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
 
   @media (min-width: ${({ theme }) => theme.lg}) {
     width: 60vw;
     flex-direction: row;
     flex: 1;
-    align-items: flex-start;
+    gap: 5rem;
+    align-items: center;
   }
 
   @media (min-width: ${({ theme }) => theme.xl}) {
@@ -49,8 +48,9 @@ export const AboutInfo = styled.div`
     color: ${({ theme }) => theme.yellowCream};
     text-align: center;
     position: relative;
+    z-index: -1;
 
-    &::before {
+    &::after {
       position: absolute;
       content: url(${quote});
       left: 0;
@@ -58,6 +58,10 @@ export const AboutInfo = styled.div`
       display: block;
       color: #fff;
       opacity: 0.1;
+    }
+
+    @media (min-width: ${({ theme }) => theme.md}) {
+      z-index: 1;
     }
   }
 

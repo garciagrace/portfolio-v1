@@ -81,6 +81,7 @@ export const NavList = styled.div`
   background: ${({ theme }) => theme.bgPrimaryTrans};
   font-family: ${({ theme }) => theme.ffRobotoMono};
   padding: 1rem 0;
+  z-index: 10;
 
   &.active {
     display: flex;
@@ -99,5 +100,9 @@ export const NavList = styled.div`
 
   @media (min-width: ${({ theme }) => theme.md}) {
     display: flex;
+
+    &.active {
+      flex-direction: row;
+    }
   }
 `;

@@ -88,8 +88,11 @@ const GlobalStyles = createGlobalStyle`
 
   section {
     width: 90vw;
+    min-height: 90vh;
     margin-inline: auto;
-    padding: 2rem 0;
+    padding: 5rem 0 2rem;
+    display: flex;
+
 
     @media (min-width: ${({ theme }) => theme.md}) {
       width: 80vw;

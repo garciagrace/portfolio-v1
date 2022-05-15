@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactSection = styled.section`
-  display: flex;
+  min-height: 80vh;
   flex-direction: column;
   gap: 1.5rem;
   text-align: center;
@@ -24,7 +24,7 @@ export const SendEmail = styled.a`
   color: ${({ theme }) => theme.yellowCream};
   border: 1px solid ${({ theme }) => theme.yellowCream};
   border-radius: 5px;
-  margin: 3rem 0;
+  margin-top: 3rem;
   padding: 1rem 2rem;
   transition: all ease-in-out 500ms;
 

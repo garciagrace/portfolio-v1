@@ -20,10 +20,10 @@ const Projects = () => {
       <p>Some Things I’ve Built.</p>
       <h4>Projects</h4>
       <p>
-        Showcasing of some of my projects that I made, you can check both the
-        code and the live version of the project. If you're interested in my
-        work you're welcome to check out my other public repositories on my
-        GitHub profile.
+        Showcasing some of my projects that I made, you can check both the code
+        and the live version of the project. If you're interested in my work
+        you're welcome to check out my other public repositories on my GitHub
+        profile.
       </p>
 
       <ProjectWrapper>
