@@ -78,8 +78,9 @@ export const NavList = styled.div`
   display: none;
   align-items: center;
   gap: 2rem;
-  background: ${({ theme }) => theme.bgPrimaryTrans};
+  background: ${({ theme }) => theme.yellowCream};
   font-family: ${({ theme }) => theme.ffRobotoMono};
+  border-radius: 5px;
   padding: 1rem 0;
   z-index: 10;
 
@@ -90,19 +91,25 @@ export const NavList = styled.div`
 
   & > a {
     font-size: 1.125rem;
-    color: ${({ theme }) => theme.slate};
+    color: #fff;
     transition: color ease 500ms;
-
-    &:hover {
-      color: ${({ theme }) => theme.yellowCream};
-    }
   }
 
   @media (min-width: ${({ theme }) => theme.md}) {
     display: flex;
+    background: ${({ theme }) => theme.bgPrimaryTrans};
 
     &.active {
       flex-direction: row;
+    }
+
+    & > a {
+      font-size: 1.125rem;
+      color: ${({ theme }) => theme.slate};
+
+      &:hover {
+        color: ${({ theme }) => theme.yellowCream};
+      }
     }
   }
 `;
