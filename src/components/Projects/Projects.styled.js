@@ -11,6 +11,9 @@ export const ProjectsSection = styled.section`
   p:first-child {
     display: none;
   }
+  @media (min-width: ${({ theme }) => theme.md}) {
+    padding-top: 8rem;
+  }
 
   @media (min-width: ${({ theme }) => theme.lg}) {
     h4 {

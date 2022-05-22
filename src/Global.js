@@ -90,7 +90,7 @@ const GlobalStyles = createGlobalStyle`
     width: 90vw;
     min-height: 90vh;
     margin-inline: auto;
-    padding: 5rem 0 2rem;
+    padding: 6rem 0 2rem;
     display: flex;
 
 

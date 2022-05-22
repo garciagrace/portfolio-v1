@@ -6,6 +6,8 @@ export const ContactSection = styled.section`
   gap: 1.5rem;
   text-align: center;
   align-items: center;
+  justify-content: center;
+  padding-top: 0;
 
   p {
     width: 60%;
