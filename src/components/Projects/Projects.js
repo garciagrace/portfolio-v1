@@ -51,10 +51,18 @@ const Projects = () => {
             </CardStack>
 
             <CardLink>
-              <a href="/##">
+              <a
+                href="https://github.com/garciagrace/zaloza_mern"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <RiGithubLine />
               </a>
-              <a href="/##">
+              <a
+                href="https://zaloza.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <MdOpenInNew />
               </a>
             </CardLink>

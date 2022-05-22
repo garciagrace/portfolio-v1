@@ -11,7 +11,9 @@ const Contact = () => {
         work on a project together, feel free to contact me.
       </p>
 
-      <SendEmail href="/###">Send me an email</SendEmail>
+      <SendEmail href="mailto:gracegarcia0803@gmail.com">
+        Send me an email
+      </SendEmail>
     </ContactSection>
   );
 };

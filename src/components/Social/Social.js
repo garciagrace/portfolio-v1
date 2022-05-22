@@ -7,13 +7,21 @@ import { FiLinkedin } from 'react-icons/fi';
 const Social = () => {
   return (
     <SocialNav>
-      <a href="/#">
+      <a href="https://github.com/garciagrace" target="_blank" rel="noreferrer">
         <RiGithubLine />
       </a>
-      <a href="/#">
+      <a
+        href="https://www.linkedin.com/in/gracegarciainfo/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FiLinkedin />
       </a>
-      <a href="/#">
+      <a
+        href="https://twitter.com/__gracegarcia"
+        target="_blank"
+        rel="noreferrer"
+      >
         <RiTwitterLine />
       </a>
     </SocialNav>
