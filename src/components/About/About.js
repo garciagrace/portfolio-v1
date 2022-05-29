@@ -1,7 +1,7 @@
 import React from 'react';
 import { AboutInfo, AboutSection, ImageHolder, Stack } from './About.styled';
 
-import grace from '../../assets/gracegarcia.jpg';
+import grace from '../../assets/gracegarcia.png';
 import TechStack from '../TechStack/TechStack';
 
 const About = () => {
