@@ -11,7 +11,7 @@ const Social = () => {
         <RiGithubLine />
       </a>
       <a
-        href="https://www.linkedin.com/in/gracegarciainfo/"
+        href="https://www.linkedin.com/in/gracegarcia08/"
         target="_blank"
         rel="noreferrer"
       >

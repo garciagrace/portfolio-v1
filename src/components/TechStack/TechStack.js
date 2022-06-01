@@ -6,6 +6,7 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
+  FaJava,
 } from 'react-icons/fa';
 import {
   SiJavascript,
@@ -32,6 +33,10 @@ const TechStack = () => {
       <Icon>
         <SiJavascript />
         <p>JS</p>
+      </Icon>
+      <Icon>
+        <FaJava />
+        <p>Java</p>
       </Icon>
       <Icon>
         <FaSass />
